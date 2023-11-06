@@ -5,7 +5,15 @@
   "main": "index.js",
   "scripts": {
     "format": "npx prettier --write .",
-    "lint": "npx eslint . --ext .ts --max-warnings=0"
+    "lint": "npx eslint . --ext .ts --max-warnings=0",
+    "tests:all": "npx playwright test tests",
+    "tests:browser": "npx playwright test tests --headed",
+    "tests:ui": "npx playwright test tests --ui",
+    "tests:ch": "npx playwright test tests --project=chromium",
+    "tests:ff": "npx playwright test tests --project=firefox",
+    "tests:wk": "npx playwright test tests --project=webkit",
+    "tests:debug": "npx playwright test tests/ --debug --project=chromium",
+    "tests:report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
