@@ -6,7 +6,7 @@
   "scripts": {
     "format": "npx prettier --write .",
     "lint": "npx eslint . --ext .ts --max-warnings=0",
-    "test": "npx playwright test tests",
+    "test": "npx playwright test",
     "tests:browser": "npx playwright test tests --headed",
     "tests:ui": "npx playwright test tests --ui",
     "tests:ch": "npx playwright test tests --project=chromium",
